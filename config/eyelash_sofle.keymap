@@ -61,17 +61,16 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        layer_0 {
             bindings = <
-&kp CAPS    &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB     &kp Q      &kp W         &kp F         &kp P   &kp B        &kp DOWN_ARROW   &kp J      &kp L      &kp U      &kp Y            &kp SEMI    &kp BSLH
-&kp ESC     &kp A      &kp R         &kp S         &kp T   &kp G        &kp C_PREV       &kp M      &kp N      &kp E      &kp I            &kp O       &kp APOS
-&kp LSHFT   &kp Z      &kp X         &kp C         &kp D   &kp V        &kp C_NEXT       &kp K      &kp H      &kp COMMA  &kp DOT          &kp FSLH    &kp RSHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp C_PLAY_PAUSE &kp SPACE  &kp ENTER  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&kp CAPS    &kp N1       &kp N2          &kp N3          &kp N4        &kp N5       &kp UP_ARROW     &kp N6     &kp N7       &kp N8         &kp N9           &kp N0       &kp BACKSPACE
+&kp TAB     &kp Q        &kp W           &kp F           &kp P         &kp B        &kp DOWN_ARROW   &kp J      &kp L        &kp U          &kp Y            &kp SEMI     &kp BSLH
+&kp ESC     &hml LCTRL A &hml LGUI R     &hml LALT S     &kp T         &kp G        &kp C_PREV       &kp M      &kp N        &hmr RALT E    &hmr RGUI I      &hmr RCTRL O &kp APOS
+&kp LSHFT   &kp Z        &kp X           &kp C           &kp D         &kp V        &kp C_NEXT       &kp K      &kp H        &kp COMMA      &kp DOT          &kp FSLH     &kp RSHIFT
+&kp C_MUTE  &kp LCTRL    &kp LEFT_GUI    &kp LEFT_ALT    &mo 1         &kp SPACE    &kp C_PLAY_PAUSE &kp SPACE  &kp ENTER    &mo 2          &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
         };
 
         layer_1 {
@@ -83,7 +82,6 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
             sensor-bindings = <&scroll_encoder>;
         };
 
