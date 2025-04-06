@@ -61,13 +61,25 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        default {
             bindings = <
 &kp CAPS    &kp N1       &kp N2          &kp N3          &kp N4        &kp N5       &kp UP_ARROW     &kp N6     &kp N7       &kp N8         &kp N9           &kp N0       &kp BACKSPACE
 &kp TAB     &kp Q        &kp W           &kp F           &kp P         &kp B        &kp DOWN_ARROW   &kp J      &kp L        &kp U          &kp Y            &kp SEMI     &kp BSLH
 &kp ESC     &hml LALT A  &hml LSHFT R    &hml LCTRL S    &hml LGUI T   &kp G        &kp C_PREV       &kp M      &hmr RGUI N  &hmr RCTRL E   &hmr RSHIFT I    &hmr RALT O  &kp APOS
 &kp LSHFT   &kp Z        &kp X           &kp C           &kp D         &kp V        &kp C_NEXT       &kp K      &kp H        &kp COMMA      &kp DOT          &kp FSLH     &kp RSHIFT
-&kp C_MUTE  &kp LCTRL    &kp LEFT_GUI    &kp TAB         &kp SPACE     &mo 1        &kp C_PLAY_PAUSE &mo 2      &kp ENTER    &kp BACKSPACE  &kp DELETE       &kp DELETE
+&kp C_MUTE  &kp LCTRL    &kp LEFT_GUI    &kp TAB         &kp SPACE     &mo 2        &kp C_PLAY_PAUSE &mo 3      &kp ENTER    &kp BACKSPACE  &kp DELETE       &kp DELETE
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
+        };
+
+        qwerty {
+            bindings = <
+&kp CAPS    &kp N1       &kp N2          &kp N3          &kp N4        &kp N5       &kp UP_ARROW     &kp N6     &kp N7       &kp N8         &kp N9           &kp N0       &kp BACKSPACE
+&kp TAB     &kp Q        &kp W           &kp E           &kp R         &kp T        &kp DOWN_ARROW   &kp Y      &kp U        &kp I          &kp O            &kp P        &kp BSLH
+&kp ESC     &kp A        &kp S           &kp D           &kp F         &kp G        &kp C_PREV       &kp H      &kp J        &kp K          &kp L            &kp SEMI     &kp APOS
+&kp LSHFT   &kp Z        &kp X           &kp C           &kp V         &kp B        &kp C_NEXT       &kp N      &kp M        &kp COMMA      &kp DOT          &kp FSLH     &kp RSHIFT
+&kp C_MUTE  &kp LCTRL    &kp LEFT_GUI    &kp TAB         &kp SPACE     &mo 2        &kp C_PLAY_PAUSE &mo 3      &kp ENTER    &kp BACKSPACE  &kp DELETE       &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -79,7 +91,7 @@
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP      &kp RIGHT  &kp BACKSPACE     &kp BACKSPACE
 &trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp C_MUTE  &to 0            &to 1           &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
