@@ -106,11 +106,11 @@
         symbols {
             display-name = "SYM";
             bindings = <
-&kp TILDE  &trans          &trans     &trans     &trans    &trans    &mmv MOVE_UP     &trans    &trans  &trans  &trans  &trans  &trans
-&trans     &kp UNDERSCORE  &kp MINUS  &kp AMPS   &kp LPAR  &kp RPAR  &mmv MOVE_DOWN   &trans    &trans  &trans  &trans  &trans  &trans
-&trans     &kp UNDERSCORE  &kp PLUS   &kp EQUAL  &kp LBRC  &kp RBRC  &mmv MOVE_LEFT   &kp ENTER &trans  &trans  &trans  &trans  &trans
-&trans     &trans          &kp STAR   &kp EXCL   &kp LBKT  &kp RBKT  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
-&trans     &trans          &trans     &trans     &trans    &trans    &mkp LCLK        &trans    &trans  &trans  &trans  &trans
+&kp TILDE  &trans          &trans     &trans     &trans    &trans    &mmv MOVE_UP     &trans    &trans    &trans     &trans      &trans    &trans
+&trans     &kp UNDERSCORE  &kp MINUS  &kp AMPS   &kp LPAR  &kp RPAR  &mmv MOVE_DOWN   &trans    &trans    &trans     &trans      &trans    &trans
+&trans     &kp UNDERSCORE  &kp PLUS   &kp EQUAL  &kp LBRC  &kp RBRC  &mmv MOVE_LEFT   &kp ENTER &kp RGUI  &kp RCTRL  &kp RSHIFT  &kp RALT  &trans
+&trans     &trans          &kp STAR   &kp EXCL   &kp LBKT  &kp RBKT  &mmv MOVE_RIGHT  &trans    &trans    &trans     &trans      &trans    &trans
+&trans     &trans          &trans     &trans     &trans    &trans    &mkp LCLK        &trans    &trans    &trans     &trans      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
