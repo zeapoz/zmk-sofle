@@ -63,8 +63,73 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - SYM
   - NUM
-  - RGUI
   - CFG
+  - {t: GALLIUM, h: toggle}
+  GALLIUM:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-tab$$
+  - B
+  - L
+  - D
+  - C
+  - V
+  - {t: '$$mdi:transfer$$', type: trans}
+  - J
+  - Y
+  - O
+  - U
+  - {t: ',', s: <}
+  - {t: \, s: '|'}
+  - $$mdi:keyboard-esc$$
+  - {t: N, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: R, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: S, h: LGUI}
+  - G
+  - {t: '$$mdi:transfer$$', type: trans}
+  - P
+  - {t: H, h: RGUI}
+  - {t: A, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
+  - X
+  - Q
+  - M
+  - W
+  - Z
+  - {t: '$$mdi:transfer$$', type: trans}
+  - K
+  - F
+  - {t: '''', s: '"'}
+  - {t: ;, s: ':'}
+  - {t: ., s: '>'}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   NAV:
   - {t: '`', s: '~'}
   - F1
@@ -323,5 +388,5 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
