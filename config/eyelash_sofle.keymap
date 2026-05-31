@@ -106,11 +106,11 @@
         numbers {
             display-name = "NUM";
             bindings = <
-&trans     &trans    &trans  &trans   &trans &trans     &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &kp LBKT  &kp N7  &kp N8  &kp N9  &kp RBKT   &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &kp SEMI  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &kp GRAVE &kp N1  &kp N2  &kp N3  &kp BSLH   &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &trans    &trans  &kp DOT &kp 0   &kp MINUS  &trans           &trans    &trans    &trans     &trans      &trans
+&trans     &kp KP_NUMLOCK  &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp N7          &kp N8         &kp N9           &kp KPLUS     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp N4          &kp N5         &kp N6           &kp KPLUS     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp N1          &kp N2         &kp N3           &kp ENTER     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp N0          &kp N0         &kp DOT          &kp ENTER     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
