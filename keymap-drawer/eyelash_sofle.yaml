@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  BASE:
+  QWERTY:
   - $$mdi:alpha-w-box$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
