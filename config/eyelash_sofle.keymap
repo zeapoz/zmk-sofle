@@ -81,8 +81,8 @@
             display-name = "NAV";
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10        &trans
-&trans      &trans           &trans           &trans           &trans           &trans             &mmv MOVE_DOWN   &kp HOME         &kp PG_DN        &kp PG_UP   &kp END    &trans         &trans
-&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &trans             &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP      &kp RIGHT  &kp BACKSPACE  &kp DEL
+&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &trans             &mmv MOVE_DOWN   &kp HOME         &kp PG_DN        &kp PG_UP   &kp END    &trans         &trans
+&trans      &kp LALT         &kp LSHFT       &kp LCTRL        &kp LGUI         &trans             &mmv MOVE_LEFT   &kp LEFT         &kp DOWN         &kp UP      &kp RIGHT  &kp BACKSPACE  &kp DEL
 &trans      &trans           &trans           &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans           &trans           &kp INSERT  &kp F11    &kp F12        &trans
 &trans      &trans           &trans           &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
@@ -95,7 +95,7 @@
             bindings = <
 &kp TILDE  &trans          &trans     &trans     &trans    &trans    &trans           &trans    &trans    &trans     &trans      &trans    &trans
 &trans     &kp UNDERSCORE  &kp MINUS  &kp AMPS   &kp LPAR  &kp RPAR  &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &kp UNDERSCORE  &kp PLUS   &kp EQUAL  &kp LBRC  &kp RBRC  &trans           &trans    &trans    &trans     &trans      &trans    &trans
+&trans     &kp UNDERSCORE  &kp PLUS   &kp EQUAL  &kp LBRC  &kp RBRC  &trans           &kp RGUI  &kp RCTRL &kp RSHIFT &kp RALT    &trans    &trans
 &trans     &trans          &kp STAR   &kp EXCL   &kp LBKT  &kp RBKT  &trans           &trans    &trans    &trans     &trans      &trans    &trans
 &trans     &trans          &trans     &trans     &trans    &trans    &trans           &trans    &trans    &trans     &trans      &trans
             >;
@@ -108,7 +108,7 @@
             bindings = <
 &trans     &trans          &kp KP_NUMLOCK  &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans          &kp N7          &kp N8           &kp N9          &kp KP_PLUS     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans          &kp N4          &kp N5           &kp N6          &kp KP_PLUS     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans          &kp N4          &kp N5           &kp N6          &kp KP_PLUS     &trans  &kp RGUI  &kp RCTRL  &kp RSHIFT  &kp RALT  &trans  &trans
 &trans     &trans          &kp N1          &kp N2           &kp N3          &kp ENTER     &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp N0          &kp N0         &kp DOT          &kp ENTER     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -121,7 +121,7 @@
             bindings = <
 &bt BT_CLR      &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &trans           &trans  &trans  &trans      &trans     &trans       &trans
 &bt BT_CLR_ALL  &out OUT_USB     &out OUT_BLE     &trans           &trans           &trans           &trans           &trans  &trans  &trans      &trans     &trans       &trans
-&rgb_ug RGB_TOG &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans           &trans           &trans  &trans  &trans      &trans     &trans       &trans
+&rgb_ug RGB_TOG &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans           &trans           &kp RGUI  &kp RCTRL  &kp RSHIFT  &kp RALT  &trans       &trans
 &rgb_ug RGB_EFF &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans           &trans           &trans  &trans  &trans      &trans     &trans       &trans
 &trans          &bootloader      &sys_reset       &soft_off        &trans           &trans           &trans           &trans  &trans  &trans      &trans     &trans
             >;
