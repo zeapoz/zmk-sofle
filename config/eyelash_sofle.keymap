@@ -100,7 +100,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         arrows {
@@ -113,7 +113,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         navigation {
@@ -132,11 +132,11 @@
         symbols {
             display-name = "SYM";
             bindings = <
-&kp TILDE  &trans          &trans     &trans     &trans    &trans    &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &kp UNDERSCORE  &kp MINUS  &kp AMPS   &kp LPAR  &kp RPAR  &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &kp UNDERSCORE  &kp PLUS   &kp EQUAL  &kp LBRC  &kp RBRC  &trans           &kp RGUI  &kp RCTRL &kp RSHIFT &kp RALT    &trans    &trans
-&trans     &trans          &kp STAR   &kp EXCL   &kp LBKT  &kp RBKT  &trans           &trans    &trans    &trans     &trans      &trans    &trans
-&trans     &trans          &trans     &trans     &trans    &trans    &trans           &trans    &trans    &trans     &trans      &trans
+&trans     &trans          &trans     &trans     &trans    &trans    &trans           &trans    &trans       &trans     &trans      &trans    &kp TILDE
+&trans     &trans          &kp UNDERSCORE &kp STAR &kp AMPS &kp DOLLAR &trans     &trans     &kp LPAR     &kp RPAR    &kp CARET &kp AT    &trans
+&trans     &trans          &kp MINUS  &kp PLUS   &kp EQUAL &kp HASH  &trans           &kp LT    &kp LBRC     &kp RBRC  &kp EXCL    &kp GT    &trans
+&trans     &trans          &kp PERCENT     &kp FSLH   &kp SEMICOLON &kp COLON &trans         &trans    &kp LBKT    &kp RBKT  &kp PIPE    &trans    &trans
+&trans     &trans          &trans     &trans     &trans    &trans    &trans           &trans    &trans       &trans     &trans      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
